@@ -1,7 +1,7 @@
 
 <nav class="navbar">
     <ul class="navbar-nav">
-        <li class="nav-item"><a href=""></a>Task List</li>
-        <li class="nav-item"><a href="">Add Task</li>
+        <li class="nav-item"><a href="">Task List</a></li>
+        <li class="nav-item"><a href="">Add Task</a></li>
     </ul>
 </nav>
