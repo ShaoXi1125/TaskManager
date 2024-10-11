@@ -32,4 +32,17 @@ class TaskController extends Controller
 
         return redirect()->route('index')->with('success', 'Task added successfully');
     }
+
+    public function doneTask(Request $request, $id){
+        $tasks = Tasks::findOrFail($id);
+
+        // $request->validate([
+        //     'isCompleted' =>'required'
+        // ]);
+
+        $tasks->isCompleted = true;
+        $tasks->save();
+
+        return redirect()->route('index')->with('success', 'Task marked as done successfully');
+    }
 }
