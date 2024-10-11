@@ -9,7 +9,7 @@
             </div>
         @endif
 
-        <table class=''>
+        <table class='table'>
             <th>Title</th>
             <th>Description</th>
             <th>Status</th>
