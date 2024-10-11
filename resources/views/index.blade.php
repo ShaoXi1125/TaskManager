@@ -20,9 +20,9 @@
                     <td>{{$task->title}}</td>
                     <td>{{$task->description}}</td>
                     <td>@if($task->isCompleted == 1)
-                        <span>Completed</span>
+                        <span class="badge text-bg-success">Completed</span>
                     @else
-                        <span>Pending</span>
+                        <span class="badge text-bg-warning">Pending</span>
                     @endif
                     </td>
                     <td>{{$task->due_date}}</td>
